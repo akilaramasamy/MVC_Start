@@ -11,7 +11,7 @@ namespace MVC_Start.Controllers
   {
     public IActionResult Index(int id)
     {
-      return View();
+      return View(id);
     }
 
     public IActionResult IndexWithLayout()
