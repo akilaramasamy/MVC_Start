@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+@model PersonViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form asp-controller="Person" asp-action="Save" method="post">
+        <p>First Name: <input asp-for="@Model.FirstName"></p>
+        <p>Last Name: <input asp-for="@Model.LastName"></p>
+        <p>Age: <input asp-for="@Model.Age" /></p>
+        <p>Phone number: <input asp-for="@Model.Phone" /></p>
+        <p>Email: <input asp-for="@Model.Email" /></p>
+        <p>Address: <input asp-for="@Model.Address" /></p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
